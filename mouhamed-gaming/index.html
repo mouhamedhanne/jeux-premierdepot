@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="doc/bootstrap.min.css" />
+    <link rel="stylesheet" href="doc/style.css" />
+    <link rel="stylesheet" href="pierre.css" />
+    <link rel="stylesheet" href="sudoku.css">
+
+    <title>mouhamed-gaming</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-info">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">MOUHAMED GAMING</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Acceuil</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Jeux
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Tic Tac Tao</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Pierre-Feuille-Ciseau</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Morpion</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="indexe.html">Runing</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Car Rally (pas disponible)</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Snake (pas disponible)</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    </div>
+    <div class="container">
+      <h1>
+        Hello,<br />
+        Bienvenu sur GEEK GAMING
+      </h1>
+      <h4>
+        Vous trouverez ici des jeux pour les passionnés du hacking, de la
+        programmation et du fiction
+      </h4>
+    </div>
+    <div class="lien">
+      <a href="#">Tic Tac Tao</a><br />
+      <a href="#">Snake (pas disponible)</a><br />
+      <a href="#">Pierre-Feuille-Ciseaux</a><br />
+      <a href="indexe.html">Runing</a><br />
+      <a href="#">Morpion</a><br />
+      <a href="#">Car Rally (pas disponible)</a>
+    </div>
+
+    <!--start of the tic tac toe game-->
+    <h1 class="cit">Tic Tac Toe</h1>
+    <div id="grid">
+      <div id="c1" class="case"></div>
+      <div id="c2" class="case"></div>
+      <div id="c3" class="case"></div>
+      <div id="c4" class="case"></div>
+      <div id="c5" class="case"></div>
+      <div id="c6" class="case"></div>
+      <div id="c7" class="case"></div>
+      <div id="c8" class="case"></div>
+      <div id="c9" class="case"></div>
+    </div>
+    <div id="score">
+      <p>C'est au tour du joueur <span id="joueur"></span></p>
+      <p>Score joueur 1 : <span id="score1">0</span></p>
+      <p>Score joueur 2 : <span id="score2">0</span></p>
+      <p>Matchs nul : <span id="scoreNul0">0</span></p>
+    </div>
+    <!--end the tic tac tao game-->
+
+    <!--start the pierre-feuille-ciseaux game-->
+   
+    <section class="second">
+      <p class="para">Pierre-Feuille-Ciseaux</p>
+      <div class="score">
+        <p>Vous</p>
+        <p>Ordinateur</p>
+        <p id="score-joueur">0</p>
+        <p id="score-ordinateur">0</p>
+        <div id="reset">Recommencer</div>
+      </div>
+      <div class="action">
+        <p id="message">A vous de jouer !</p>
+        <div id="next">Tour suivant</div>
+      </div>
+      <div class="jeu">
+        <div class="choix">
+          <div class="button btn-joueur" id="pierre">
+            <img src="./assets/pierre.png" alt="pierre" />
+            <p>Pierre</p>
+          </div>
+          <div class="button btn-joueur" id="feuille">
+            <img src="./assets/feuille.png" alt="feuille" />
+            <p>Feuille</p>
+          </div>
+          <div class="button btn-joueur" id="ciseaux">
+            <img src="./assets/ciseaux.png" alt="ciseaux" />
+            <p>Ciseaux</p>
+          </div>
+        </div>
+
+        <div class="choix">
+          <div class="button btn-ordi" id="opierre">
+            <img src="./assets/pierre.png" alt="pierre" />
+            <p>Pierre</p>
+          </div>
+          <div class="button btn-ordi" id="ofeuille">
+            <img src="./assets/feuille.png" alt="feuille" />
+            <p>Feuille</p>
+          </div>
+          <div class="button btn-ordi" id="ociseaux">
+            <img src="./assets/ciseaux.png" alt="ciseaux" />
+            <p>Ciseaux</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+
+      
+      <div id="gameEnd">
+        <p class="white" id="endGameStatus">...</p>
+        <input type="submit" value="Recommencer" id="reloadGame" onclick="reloadGame()">
+      </div>
+  
+      <div class="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+  
+      <h1 id="gameStatus">Le joueur 1 commence!</h1>
+      <h1>Morpion à (2)</h1>
+    </section>
+
+    <!--end the pierre-feuille-ciseux game-->
+
+    <!--script pierre-feuile-ciseaux-->
+    <script src="pierre.js"></script>
+
+    <!--script of tic tac-->
+    <script src="./app.js"></script>
+
+   <script src="sudoku.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
